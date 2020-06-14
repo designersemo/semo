@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box01</title>
+    <style >
+        .helloworld{
+            border-radius: 5px;
+            border: 5px solid silver;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .border{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>.off()메소드</h1>
+    <button id="clickBtn">마우스를 클릭해 보세요!</button>
+    <button id="removeBtn">클릭 이벤트를 제거합니다!</button>
+    <p id="text"></p>
+    <!--.off()메소드 끝-->
+
+    <div>
+        <button id="test" onclick="alert('Clicking!');">click me!</button>
+    </div>
+
+    <hr>
+
+    <h1>이벤트 위임</h1>
+    <p>아래 버튼을 눌러 링크를 추가하고, 링크를 클릭해 보세요!</p>
+    <ul>
+        <li><a htrf="/html/intro">html</a></li>
+        <li><a href="/css/itro">css</a></li>
+    </ul>
+
+    <button>리스트 아이템 추가</button>
+    <p id="text2"></p>
+
+
+    <h1>.off()메소드</h1>
+
+    <button type="button" onclick="helloWorld();">버튼을 연타해보세요!</button>
+    <div class="helloworld"></div>
+
+
+
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script_3.js"></script>
+</body>
+</html>
