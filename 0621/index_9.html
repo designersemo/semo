@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .jbTitle{
+            text-align: center;
+        }
+
+        .jbMenu{
+            text-align: center;
+            background-color: lightpink;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .jbContent{
+            height: 2000px;
+        }
+
+        .jbFixed{
+            position: fixed;
+            top: 0px;
+        }
+/* 
+        .inner{
+            top:0;
+            width:100%;
+            min-width: 1000px;
+            margin: 0 auto;
+            background-color: lavenderblush;
+            padding: 0 10px;
+            height: 45px;
+            box-sizing: border-box;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="inner">
+
+    </div> -->
+    <div class="jbTitle">
+        <h1>site title</h1>
+    </div>
+
+    <div class="jbMenu">
+        <a href="#">
+        <p>
+            first menu
+            second menu
+            third menu
+            fourth menu
+        </p> </a>
+    </div>
+    <div class="jbContent"></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var jbOffset = $('.jbMenu').offset();
+            $(window).scroll(function(){
+                if($(document).scrollTop()>100){
+                    $('.jbMenu').addClass('jbFixed');
+                }else{
+                    $('.jbMenu').removedClass('jbFixed');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

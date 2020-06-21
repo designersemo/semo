@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <link rel="stylesheet" href="css/style_5.css">
+   
+</head>
+<body>
+    <div class="all">
+        <header>
+            <div id="logo">
+                <a href="index_8.html">LOGO</a>
+            </div>
+            <nav>
+                <ul class="navi-box">
+                    <li><a href="#">home</a>
+                         <ul class="sub-nav">
+                             <li><a href="#">subtext01</a></li>
+                             <li><a href="#">subtext02</a></li>
+                             <li><a href="#">subtext03</a></li>
+                             <li><a href="#">subtext04</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">about us</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">subtext01</a></li>
+                            <li><a href="#">subtext02</a></li>
+                            <li><a href="#">subtext03</a></li>
+                            <li><a href="#">subtext04</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">service</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">subtext01</a></li>
+                            <li><a href="#">subtext02</a></li>
+                            <li><a href="#">subtext03</a></li>
+                            <li><a href="#">subtext04</a></li>
+                        </ul></li>
+                    <li><a href="#">call</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">subtext01</a></li>
+                            <li><a href="#">subtext02</a></li>
+                            <li><a href="#">subtext03</a></li>
+                            <li><a href="#">subtext04</a></li>
+                        </ul></li>
+                    <li><a href="#">etc</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">subtext01</a></li>
+                            <li><a href="#">subtext02</a></li>
+                            <li><a href="#">subtext03</a></li>
+                            <li><a href="#">subtext04</a></li>
+                        </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="slider">
+                <div class="slider-warp">
+                    <div class="slide-box">
+                       <ul>
+                          <li><img src="image/01.jpg" alt=""></li>
+                          <li><img src="image/02.jpg" alt=""></li>
+                          <li><img src="image/03.jpg" alt=""></li>
+                       </ul>
+                   </div>    
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".navi-box").mouseover(function(){
+                $(".sub-nav").slideDown();
+            });
+            $(".navi-box").mouseleave(function(){
+                $(".sub-nav").stop().slideUp();
+            });
+        });
+
+
+        setInterval(function(){
+            $('.slide-box').delay("1000");
+            $('.slide-box').animate({marginLeft:"-1200px"},500);
+            $('.slide-box').delay("1000");
+            $('.slide-box').animate({marginLeft:"-2400px"},500);
+            $('.slide-box').delay("1000");
+            $('.slide-box').animate({marginLeft:"0px"},500);
+        })
+    </script>
+</body>
+</html>

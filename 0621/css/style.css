@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+#all{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.silder>ul>li>a>img{
+    display:block;
+    transition: 1s;
+}
+
+#slider-warp{
+    width:1200px;
+    height: 300px;
+    /* overflow: hidden; */
+}

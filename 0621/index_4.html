@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxslider</title>
+    <link rel="stylesheet" href="jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/style_3.css">
+</head>
+<body>
+   <div class="bxslider">
+       <div class="slider01">
+           <img src="image/01.jpg" alt="#">
+       </div>
+       <div class="slider02">
+        <img src="image/02.jpg" alt="#">
+    </div>
+    <div class="slider03">
+        <img src="image/03.jpg" alt="#">
+    </div>
+   </div>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+   $(function(){
+     $('.bxslider').bxSlider({
+         mode:'vertical',
+         speed: 500,
+         caption: true,
+         slideWidth: 600
+     });    
+   });
+</script>
+</body>
+</html>
