@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carbox</title>
+    <link rel="stylesheet" href="css/box.css">
+    <style>
+        .sub_warp{
+            width:30%;
+        }
+        .sub_warp>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="all_warp">
+       <div class="sub_warp">
+           <img src="img/img01.jpg" alt="">
+       </div>
+       <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img02.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img03.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img04.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img05.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div> <div class="sub_warp">
+        <img src="img/img01.jpg" alt="">
+    </div>
+    </div>
+   
+       
+   </div>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(function(){
+            $('.all_warp').masonry({
+                itemSelector : '.sub_warp',
+                fitwidth: true
+            });
+        });
+    </script>
+
+</body>
+</html>

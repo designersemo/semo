@@ -79,11 +79,37 @@ img{
     background-color:  #f6f3f2;
 }
 
-.section06{
-    padding: 50px 0;
-}
-.col-lg-4{padding-top: 30px;}
-
 .section07{
     padding: 50px 0;
+}
+
+
+
+.modal-img{
+    padding: 5% 0;
+}
+
+.tabp>img{
+    width: 80%;
+}
+
+.tabp{
+    padding: 5% 0;
+}
+
+.tab-btn>button{
+    width: 80%;
+    border: none;
+    font-size: 2em;
+}
+
+.btn-content{
+    display: none;
+    border: 1px solid #000;
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    overflow-y: auto;
+    text-align: center;
+    box-sizing: border-box;
 }

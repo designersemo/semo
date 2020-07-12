@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아코디언 메뉴바 (제이쿼리 버전)</title>
+    <link rel="stylesheet" href="css/accrodion-js.css">
+    </style>
+</head>
+<body>
+    <dl>
+        <dt><span></span>전화상담은 언제부터 가능한가요?</dt>
+        <dd>나도 모르는데에</dd>
+        <dt><span></span>내 구매내역은 어디서 확인하나요?</dt>
+        <dd>나도 모르는데에</dd>
+    </dl>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    //    $('dt').on('click',function(){
+    //        function slideDown(target){
+    //            slideUp();
+    //            $(target).addClass('on').next().slideDown();
+    //        }
+    //        function slideUp(){
+    //            $('dt').removeClass('on').next().slideUp();
+    //        };
+    //        $(this).hasClass('on') ? slideUp() : slideDown($(this));
+    //    });
+
+
+        $(function(){
+            $('dt').click(function(){
+                $('dt').siibling().slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
